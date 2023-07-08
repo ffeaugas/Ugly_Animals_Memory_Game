@@ -1,0 +1,74 @@
+:root {
+    --backgroundColor: hsl(56, 32%, 82%);
+    --gameBackgroundColor: hsl(59, 41%, 68%);
+    --titleColor1: hsl(273, 94%, 81%);
+    --titleColor2: hsl(36, 95%, 58%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid 1px rgb(181, 196, 224); */
+}
+
+h1 {
+    font-size: clamp(0.8em, 0.8em + 2vw, 2em);
+    font-family: 'Anton', sans-serif;
+    color: rgb(46, 51, 61);
+}
+
+h1 b {
+    color: var(--textColor1);
+    font-size: clamp(1em, 1em + 2vw, 2.5em);
+}
+
+#U,
+#L {
+    color: var(--titleColor1);
+}
+
+#G,
+#Y {
+    color: var(--titleColor2);
+}
+
+p,
+h2 {
+    font-family: 'Belanosima', sans-serif;
+}
+
+header {
+    color: linear-gradient(132deg, rgba(34, 193, 195, 1) 0%, rgba(13, 219, 71, 1) 100%);
+    padding: clamp(0.8em, 0.8em + 2vw, 2em);
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+main {
+    background-color: var(--gameBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    padding: clamp(0.8em, 0.8em + 2vw, 2em);
+    gap: clamp(0.8em, 0.8em + 2vw, 2em);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+#cat-img {
+    max-width: 300px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
