@@ -1,6 +1,6 @@
 :root {
     --backgroundColor: hsl(56, 32%, 82%);
-    --gameBackgroundColor: hsl(59, 41%, 68%);
+    --gameBackgroundColor: hsl(60, 5%, 63%);
     --titleColor1: hsl(273, 94%, 81%);
     --titleColor2: hsl(36, 95%, 58%);
 }
@@ -39,7 +39,6 @@ h2 {
 }
 
 header {
-    color: linear-gradient(132deg, rgba(34, 193, 195, 1) 0%, rgba(13, 219, 71, 1) 100%);
     padding: clamp(0.8em, 0.8em + 2vw, 2em);
 }
 
@@ -51,8 +50,27 @@ main {
     background-color: var(--gameBackgroundColor);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: clamp(0.8em, 0.8em + 2vw, 2em);
     gap: clamp(0.8em, 0.8em + 2vw, 2em);
+}
+
+button {
+    width: 30%;
+    height: 50px;
+    transition: all 0.2s ease-in;
+    border: 3px var(--titleColor1) solid;
+    color: var(--titleColor1);
+    background-color: inherit;
+    margin: 0 auto;
+    font-size: clamp(0.8em, 0.8em + 1vw, 2em);
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px -5px var(--titleColor2);
+    border: 3px var(--titleColor2) solid;
+    color: var(--titleColor2);
 }
 
 .grid {
@@ -64,11 +82,10 @@ main {
     justify-content: center;
 }
 
-#cat-img {
-    max-width: 300px;
-}
-
 img {
-    height: 100px;
-    width: 100px;
+    /* height: 100px;
+    width: 100px; */
+    height: clamp(3em, 3em + 5vw, 6em);
+    width: clamp(3em, 3em + 5vw, 6em);
+
 }
